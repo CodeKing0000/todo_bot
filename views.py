@@ -6,5 +6,5 @@ class View:
         result = []
         for i in range(len(tasks)):
             status = "✅" if tasks[i][2] else "❌"
-            result.append(f"{i+1}. {tasks[i][1]} ({tasks[i][0]}){status}")
+            result.append(f"{i+1}. {tasks[i][1]} ({tasks[i][0]}) {status}")
         return "\n".join(result)
